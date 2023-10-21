@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Martian+Mono:wght@300&display=swap');
+
+* {
+	margin: 0 0;
+	padding: 0 0;
+	height: auto;
+	width: auto;
+}
+
+body {
+	background-color: #272829;
+	min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.mainbody {
+	animation: appear 1s forwards;
+}
+
+.imghtml {
+	max-width: 20%;
+	float: right;
+	padding: 10px 10px;
+	background-color: #80808029;
+	border-radius: 5px;
+	animation: appear 1s forwards;
+}
+
+.txthtml {
+	color: white;
+	padding: 20px;
+	font-family: 'Martian Mono', monospace;
+	font-size: 20px;
+	animation: appear 1s forwards;
+}
+
+footer {
+	bottom: 0;
+	padding-top: 10px;
+	padding-bottom: 0;
+	display: block;
+	text-align: center;
+	width: 100%;
+	height: 20px;
+	font-family: 'Martian Mono', monospace;
+	font-size: 10px;
+	background: gray;
+	animation: appear 1s forwards;
+	margin-top: auto;
+}
+
+header ul {
+	display: block;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #040D12;
+}
+
+header li {
+  float: left;
+  width: 33.333%;
+}
+
+header li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: 'Martian Mono', monospace;
+ 	font-size: 16px;
+	animation: appear 0.5s forwards;
+	transition: 0.4s;
+}
+
+/* Change the link color to #111 (black) on hover */
+header li a:hover {
+  background-color: #93B1A6;
+  color: black;
+}
+
+.active {
+  background-color: #5C8374;
+}
+
+.mainlogo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 55%;
+	animation: appear 1s forwards;
+}
+
+.list {
+	font-family: 'Martian Mono', monospace;
+	color: white;
+	padding-left: 30px;
+	float: left;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-family: 'Martian Mono', monospace;
+ 	font-size: 16px;
+	animation: appear 0.5s forwards;
+	transition: 0.4s;
+	overflow: hidden;
+}
+
+.list a {
+	text-decoration: none;
+	color: white;
+	overflow: hidden;
+}
+
+.list a:after {
+	display: block; /*превращаем его в блочный элемент*/
+	content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+	height: 3px; /*задаём высоту линии*/
+	width: 0%; /*задаём начальную ширину элемента (линии)*/
+	background-color: white; /*цвет фона элемента*/
+	transition: width 0.4s ease-in-out; /*данное свойство отвечает за плавное изменение ширины. Здесь можно задать время анимации в секундах (в данном случае задано 0.4 секунды)*/
+}
+.list a:hover:after,
+
+.list a:focus:after {
+	width: 180px;
+}
+
+@keyframes appear {
+	0% {opacity: 0;}
+	0% {transform: translateX(-50px);}
+	100% {opacity: 1;}
+	100% {transform: translateX(0px);}
+}
+
+iframe {
+	width: 450px;
+	height: 550px;
+	margin-left: auto;
+  margin-right: auto;
+}
