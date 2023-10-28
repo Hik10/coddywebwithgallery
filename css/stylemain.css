@@ -35,7 +35,7 @@ body {
 	animation: appear 1s forwards;
 }
 
-footer {
+footer a{
 	bottom: 0;
 	padding-top: 10px;
 	padding-bottom: 0;
@@ -48,6 +48,12 @@ footer {
 	background: gray;
 	animation: appear 1s forwards;
 	margin-top: auto;
+	text-decoration: none;
+}
+
+footer p a {
+	text-decoration: none;
+	color: black;
 }
 
 header ul {
